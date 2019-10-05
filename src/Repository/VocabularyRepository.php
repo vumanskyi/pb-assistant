@@ -2,21 +2,21 @@
 
 namespace App\Repository;
 
-use App\Entity\Vacabulary;
+use App\Entity\Vocabulary;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Common\Persistence\ManagerRegistry;
 
 /**
- * @method Vacabulary|null find($id, $lockMode = null, $lockVersion = null)
- * @method Vacabulary|null findOneBy(array $criteria, array $orderBy = null)
- * @method Vacabulary[]    findAll()
- * @method Vacabulary[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method Vocabulary|null find($id, $lockMode = null, $lockVersion = null)
+ * @method Vocabulary|null findOneBy(array $criteria, array $orderBy = null)
+ * @method Vocabulary[]    findAll()
+ * @method Vocabulary[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class VacabularyRepository extends ServiceEntityRepository
+class VocabularyRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, Vacabulary::class);
+        parent::__construct($registry, Vocabulary::class);
     }
 
     // /**

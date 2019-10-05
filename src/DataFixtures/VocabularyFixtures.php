@@ -2,15 +2,15 @@
 
 namespace App\DataFixtures;
 
-use App\Entity\Vacabulary;
+use App\Entity\Vocabulary;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\Persistence\ObjectManager;
 
-class VacabularyFixtures extends Fixture
+class VocabularyFixtures extends Fixture
 {
     public function load(ObjectManager $manager)
     {
-        $vacabulary = new Vacabulary();
+        $vacabulary = new Vocabulary();
         $vacabulary->setWord('hesitate');
         $vacabulary->setTranscription('/ˈhɛzɪteɪt/');
         $vacabulary->setTranslate('стесняться');

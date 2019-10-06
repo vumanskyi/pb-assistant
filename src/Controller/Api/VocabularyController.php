@@ -14,7 +14,7 @@ use Symfony\Component\HttpFoundation\Response;
  * @author Vlad Umanskyi
  * @Rest\Route("/api")
  */
-class VacabularyController extends AbstractFOSRestController
+class VocabularyController extends AbstractFOSRestController
 {
     /**
      * @var VocabularyRepository
